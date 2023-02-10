@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/* ! base css start */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Electrolize", sans-serif;
+}
+.container-fluid,
+.container-my{
+  background-color: #000;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+/* ! base css end */
+
+/* ! NAVBAR START */
+.navbar-my {
+  background-color: #000;
+  height: 50px;
+  color: white;
+  position: fixed; 
+  z-index: 1; /* logoyu sidebar ile kesişimde öne çıkartıyor*/
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  margin-top: 20px; 
+  list-style: none;
+  column-gap: 30px; /* menü listedeki elemanların arasına boşluk vermek için kullandık */
+  padding: 0;
+}
+.menu-list-item {
+  cursor: pointer;
+}
+.menu-list-item:hover {
+  font-weight: bold;
+}
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  display: flex; /* YAN YANA GELMESİNİ SAĞLIYOR  */
+  margin-top: 10px;
+  align-items: center;
+  column-gap: 20px; /* menü listedeki elemanların arasına boşluk vermek için kullandık */
+}
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+.toggle {
+  width: 40px;
+  background-color: white;
+  position: relative;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  transition: .5s ease all;
+}
+/* ! NAVBAR END */
+
+/* ! SIDEBAR START */
+.sidebar {
+  background-color: #000;
+  color: white;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  row-gap: 40px; /* simgeler arası boşluk için */
+  position: fixed;
+  top: 0;
+}
+.sidebar i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ! SIDEBAR END */
+
+/*  ! content start */
+
+.content-wrapper {
+  width: 90%;
+  margin-top: -50px;
+}
+.featured-content {
+  width: 90%;
+ margin: 50px;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.featured-title {
+  width: 90%; 
+  justify-self: center;  
+  display: block;
+  margin:  auto;
+  
+}
+
+.featured-desc {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 80px;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
+.featured-buttons {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  margin-top: -100px;
+}
+.featured-buttons button {
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  column-gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.featured-buttons .info-buttons {
+  background-color: rgb(145, 142, 142, 0.5);
+  color: white;
+}
+.movie-list-filter {
+text-align: start;
+margin-left: 50px;
+margin-bottom: 20px;
+  
+}
+.movie-list-filter select {
+  background-color: black;
+  color: white;
+  padding: 7px 0;
+  width: 125px;
+}
+.movie-list-container {
+  margin-left: 70px;
+}
+.movie-list-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+.movie-list {
+  list-style: none;
+  height: 300px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  transform: translateX(0);
+  transition: 1s ease-in-out;
+
+}
+.movie-item {
+  position: relative;
+}
+.movie-item:hover .movie-item-title, 
+.movie-item:hover .movie-item-buttons {
+  opacity: 1;
+}
+.movie-item:hover .movie-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: .5;
+
+}
+.movie-item-img {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  transition: 1s all ease-in-out;
+}
+.movie-item-title {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.movie-item-buttons {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 10px;
+  /* font-size: 28px; */
+  font-weight: bold;
+  position: absolute;
+  bottom: 15%;
+  left: 60px;
+  display: flex;
+  column-gap: 20px;
+  opacity: 0;
+  transition: .5s all ease-in-out;
+
+  
+  
+}
+.movie-item-buttons i {
+  cursor: pointer;
+  opacity: .5;
+  font-size: 20px;
+  transition: .5s all ease;
+}
+.movie-item-buttons i:hover {
+  opacity: 1;
+  
+}
+.arrow{
+  width: 100px;
+  display: flex;
+  font-size: 120px;
+  position: absolute;/* kutuları eksenden çıkarttık aşağıda right veya left ile yön verdik */
+  right: 0;/* kutuları eksenden çıkarttık aşağıda right veya left top bottom ile yön verdik */
+  top:100px;
+  opacity: .5;
+  transition: .5s ease all ;
+  cursor: pointer;
+}
+.arrow:hover{
+  opacity: 1;
+}
+/*  ! content end */
+
+/* ! DARKMODE START */
+.container-fluid.active{
+  background-color: white;
+}
+.container-my.active{
+  background-color: white;
+}
+.navbar-my.active{
+  background-color: white;
+  color: black;
+}
+.sidebar.active{
+  background-color:white
+}
+.sidebar i.active{
+  color:#000
+}
+.toggle.active{
+  background-color: black;
+}
+.movie-list-title.active{
+  color: black;
+}
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+
+}
+.movie-list-filter select.active{
+  background-color:white;
+  color: #000;
+}
+.toggle{
+  cursor:pointer;
+}
+
+/*  ! darkmode end */
+
+/*  ! RESPONSIVE START */
+
+
+@media only screen and ( max-width: 800px ){
+  .menu-container{
+    display: none;
+  }
+  .featured-content{
+    height: 50vh ;
+  }
+  .featured-buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .featured-desc{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+  }
+
+}
+
+@media (max-width:900px) {
+  .menu-list{
+    display: none;
+    width: 20%;
+    position: fixed;
+    flex-direction: column;
+    color: black;
+    right: 0;
+  }
+  .profile-container {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 200px;
+
+  }.logo{
+    width: 100px;
+    position: fixed;
+    left: 0;
+    margin-left: 5px;
+    margin-top: 10px;
+    
+  }
+  .featured-title{
+  width: 100%;
+  margin: auto;
+  }
+}
+
+ /*  ! RESPONSIVE end  */
