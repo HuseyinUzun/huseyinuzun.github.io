@@ -1,0 +1,8 @@
+C:\C#lessons\ücgenC\ücgenC\bin\Debug\ücgenC.exe.config
+C:\C#lessons\ücgenC\ücgenC\bin\Debug\ücgenC.exe
+C:\C#lessons\ücgenC\ücgenC\bin\Debug\ücgenC.pdb
+C:\C#lessons\ücgenC\ücgenC\obj\Debug\ücgenC.csproj.AssemblyReference.cache
+C:\C#lessons\ücgenC\ücgenC\obj\Debug\ücgenC.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\ücgenC\ücgenC\obj\Debug\ücgenC.csproj.CoreCompileInputs.cache
+C:\C#lessons\ücgenC\ücgenC\obj\Debug\ücgenC.exe
+C:\C#lessons\ücgenC\ücgenC\obj\Debug\ücgenC.pdb
