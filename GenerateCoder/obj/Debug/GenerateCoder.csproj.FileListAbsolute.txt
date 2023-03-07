@@ -1,0 +1,16 @@
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\GenerateCoder.exe.config
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\GenerateCoder.exe
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\GenerateCoder.pdb
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\zxing.dll
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\zxing.presentation.dll
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\zxing.xml
+C:\C#lessons\GenerateCoder\GenerateCoder\bin\Debug\zxing.presentation.xml
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.csproj.AssemblyReference.cache
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.Form1.resources
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.Properties.Resources.resources
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.csproj.GenerateResource.cache
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.csproj.CoreCompileInputs.cache
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.csproj.CopyComplete
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.exe
+C:\C#lessons\GenerateCoder\GenerateCoder\obj\Debug\GenerateCoder.pdb
