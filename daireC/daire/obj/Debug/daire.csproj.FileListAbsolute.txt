@@ -1,0 +1,8 @@
+C:\C#lessons\daire\daire\bin\Debug\daire.exe.config
+C:\C#lessons\daire\daire\bin\Debug\daire.exe
+C:\C#lessons\daire\daire\bin\Debug\daire.pdb
+C:\C#lessons\daire\daire\obj\Debug\daire.csproj.AssemblyReference.cache
+C:\C#lessons\daire\daire\obj\Debug\daire.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\daire\daire\obj\Debug\daire.csproj.CoreCompileInputs.cache
+C:\C#lessons\daire\daire\obj\Debug\daire.exe
+C:\C#lessons\daire\daire\obj\Debug\daire.pdb
