@@ -1,0 +1,15 @@
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\bin\Debug\kimlikKontrolSistemi.exe.config
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\bin\Debug\kimlikKontrolSistemi.exe
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\bin\Debug\kimlikKontrolSistemi.pdb
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\bin\Debug\MetroFramework.Design.dll
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\bin\Debug\MetroFramework.dll
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\bin\Debug\MetroFramework.Fonts.dll
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.csproj.AssemblyReference.cache
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.Form1.resources
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.Properties.Resources.resources
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.csproj.GenerateResource.cache
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.csproj.CoreCompileInputs.cache
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.csproj.CopyComplete
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.exe
+C:\C#lessons\kimlikKontrolSistemi\kimlikKontrolSistemi\obj\Debug\kimlikKontrolSistemi.pdb
