@@ -1,0 +1,8 @@
+C:\C#lessons\HOBANKATM\HOBANKATM\bin\Debug\HOBANKATM.exe.config
+C:\C#lessons\HOBANKATM\HOBANKATM\bin\Debug\HOBANKATM.exe
+C:\C#lessons\HOBANKATM\HOBANKATM\bin\Debug\HOBANKATM.pdb
+C:\C#lessons\HOBANKATM\HOBANKATM\obj\Debug\HOBANKATM.csproj.AssemblyReference.cache
+C:\C#lessons\HOBANKATM\HOBANKATM\obj\Debug\HOBANKATM.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\HOBANKATM\HOBANKATM\obj\Debug\HOBANKATM.csproj.CoreCompileInputs.cache
+C:\C#lessons\HOBANKATM\HOBANKATM\obj\Debug\HOBANKATM.exe
+C:\C#lessons\HOBANKATM\HOBANKATM\obj\Debug\HOBANKATM.pdb
