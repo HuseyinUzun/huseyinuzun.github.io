@@ -1,0 +1,56 @@
+<html> <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script language="javascript">
+     
+    function uzerimde()
+    {
+    document.getElementById("metin2").innerHTML="Fare üzerimde";
+    }
+     
+    function disarida()
+    {
+    document.getElementById("metin2").innerHTML="Fare dışarıda";
+    }
+     
+    function tiklandi()
+    {
+    document.getElementById("metin1").innerHTML="Tıklandı";
+    }
+    
+    function basildi()
+    {
+    document.getElementById("metin3").innerHTML="Fare tuşuna basıldı";
+    }
+    
+    function birakildi()
+    {
+    document.getElementById("metin3").innerHTML="Fare tuşu bırakıldı";
+    }
+    </script>
+     
+    </head><body>
+     
+    <table width="100%" border="1" cellspacing="0" cellpadding="3">
+      <tr>
+        <td>Olayın Adı</td>
+        <td>Tetikleyici</td>
+        <td>Etkilenecek Öğeler</td>
+      </tr>
+      <tr>
+        <td>onClick</td>
+        <td><button id="b1" onClick="tiklandi()">Tıkla</button></td>
+        <td><p id="metin1">&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td>onMouseOver - onMouseOut</td>
+        <td><button id="b2" onMouseOver="uzerimde()" onMouseOut="disarida()">İmleç Üzerimde</button></td>
+        <td><p id="metin2">&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td>onMouseDown</td>
+        <td><button id="b3" onMouseDown="basildi()" onMouseUp="birakildi()">Fare Tuşu Basılı</button></td>
+        <td><p id="metin3">&nbsp;</p></td>
+      </tr>
+    </table>
+     
+    </body> </html>
