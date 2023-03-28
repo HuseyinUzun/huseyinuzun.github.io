@@ -1,0 +1,11 @@
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\bin\Debug\Cafe Order Menü.exe.config
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\bin\Debug\Cafe Order Menü.exe
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\bin\Debug\Cafe Order Menü.pdb
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe Order Menü.csproj.AssemblyReference.cache
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe Order Menü.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe_Order_Menü.Form1.resources
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe_Order_Menü.Properties.Resources.resources
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe Order Menü.csproj.GenerateResource.cache
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe Order Menü.csproj.CoreCompileInputs.cache
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe Order Menü.exe
+C:\C#lessons\Cafe Order Menü\Cafe Order Menü\obj\Debug\Cafe Order Menü.pdb
