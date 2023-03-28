@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 50px;
+    margin-right: 50px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;/* dikeyde hizalar! */
+    justify-content: space-around;/* eşit aralıklı bölünür! */
+    padding: 20px;
+}
+.navbar .logo  img{
+    width: 90px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+
+}
+nav li a{
+    color: #42220c;
+    font-weight: 600;
+}
+nav{
+    margin-right: 35%;
+}
+.icon i{
+    font-size: 25px;
+
+}
+/* ROW */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-2{
+    flex-basis: 50%;
+}
+.container .box{
+    width: 500px;
+    height: 500px;
+    margin-top: -60px;
+    position: relative;
+}
+.container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;/* video fotoğraf birleştirme */
+}
+.container .box video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.col-2 h1{
+    font-size: 3rem;
+    color: #42220c;
+}
+.col-2 span{
+    font-size: 6rem;
+    margin-left: 80px!important;
+    margin: 20px 0 ;
+
+}
+.col-2 p{
+    margin: 15px 0;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #a5531d;
+    padding: 8px 30px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 70%;
+
+}
+/* contact */
+
+.contact{
+	margin-left: 35px;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 1rem; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-text h4{
+	margin: 15px 0;
+	color: #fff(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact-text h2{
+	font-size: var(--h2-font);
+}
+.contact-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.contact-list{
+	margin-bottom: 3rem;
+}
+.contact-list li{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a{
+	display: block;
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--main-color);
+}
+.contact-icons i{
+	height: 40px;
+	width: 40px;
+	background: #12141c;
+	border-radius: 0.5rem;
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	/* margin-right: 10px; */
+    margin-bottom: 50px;
+	transition: all .40s ease;
+}
+.contact-icons i:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--text-color);
+	background: var(--main-color);
+    
+}
+
+.contact-form form{
+	position: relative;
+    
+}
+.contact-form form input,
+form textarea{
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: #12141c;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+    color: #fff;
+}
+.contact-form textarea{
+	resize: none;
+	height: 220px;
+    color: #fff;
+}
+.contact-form form .send{
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	color: #fff;
+    background-color: #a5531d;
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+}
+.row2 .photo   img{
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+    position: absolute;
+    top: 250px;
+    left: 300px; 
+    right: 50px;
+    bottom: 25px;
+    mix-blend-mode: screen;
+    
+
+}
+.row2 h1{
+    font-size: 2rem;
+    color: #42220c;
+    margin-left: 200px;
+    
+}
+.row2 span{
+    font-size: 3rem;
+     margin-left: 400px!important; 
+    margin: 20px 0px;
+   
+}
