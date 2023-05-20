@@ -1,0 +1,15 @@
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\bin\Debug\Urun_Takip.exe.config
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\bin\Debug\Urun_Takip.exe
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\bin\Debug\Urun_Takip.pdb
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.csproj.AssemblyReference.cache
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.csproj.SuggestedBindingRedirects.cache
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.form1.resources
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.Properties.Resources.resources
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.csproj.GenerateResource.cache
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.csproj.CoreCompileInputs.cache
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.exe
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.pdb
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.FrmUrun.resources
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.frmIstatıstık.resources
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.FrmLogin.resources
+D:\Kodlar-Projeler\C#lessons\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.FrmYonlendirme.resources
