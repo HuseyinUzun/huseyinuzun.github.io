@@ -1,0 +1,11 @@
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\bin\Debug\ListBoxForDöngüsü.exe.config
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\bin\Debug\ListBoxForDöngüsü.exe
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\bin\Debug\ListBoxForDöngüsü.pdb
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.csproj.AssemblyReference.cache
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.Form1.resources
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.Properties.Resources.resources
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.csproj.GenerateResource.cache
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.csproj.CoreCompileInputs.cache
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.exe
+C:\C#lessons\ListBoxForDöngüsü\ListBoxForDöngüsü\obj\Debug\ListBoxForDöngüsü.pdb

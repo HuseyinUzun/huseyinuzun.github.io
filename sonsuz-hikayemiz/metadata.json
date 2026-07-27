@@ -1,0 +1,6 @@
+{
+  "name": "Sonsuz Hikayemiz",
+  "description": "Doğum günü, evlilik yıldönümü ve geleceğe uzanan interaktif, sinematik ve zamansız bir aşk hikayesi deneyimi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

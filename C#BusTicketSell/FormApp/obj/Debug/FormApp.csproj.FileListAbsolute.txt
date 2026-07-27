@@ -1,0 +1,11 @@
+C:\C#lessons\FormApp\FormApp\bin\Debug\FormApp.exe.config
+C:\C#lessons\FormApp\FormApp\bin\Debug\FormApp.exe
+C:\C#lessons\FormApp\FormApp\bin\Debug\FormApp.pdb
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.csproj.AssemblyReference.cache
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.Form1.resources
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.Properties.Resources.resources
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.csproj.GenerateResource.cache
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.csproj.CoreCompileInputs.cache
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.exe
+C:\C#lessons\FormApp\FormApp\obj\Debug\FormApp.pdb

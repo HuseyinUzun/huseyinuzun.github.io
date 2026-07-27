@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daire", "daire\daire.csproj", "{4BDE3DA1-7624-4B64-B16C-D617B356EC4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BDE3DA1-7624-4B64-B16C-D617B356EC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDE3DA1-7624-4B64-B16C-D617B356EC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDE3DA1-7624-4B64-B16C-D617B356EC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDE3DA1-7624-4B64-B16C-D617B356EC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF7D38E1-C090-42E2-88DF-70609AC7AF54}
+	EndGlobalSection
+EndGlobal

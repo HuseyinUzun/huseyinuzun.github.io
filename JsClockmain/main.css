@@ -1,0 +1,32 @@
+body {
+    background-color: #000000;
+    color: #ffff;
+}
+#clock {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+#clock h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.clock-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    align-content: center;
+}
+.clock-items {
+    width: 32%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-family: 'Orbitron' , sans-serif;
+    font-size: 60px;
+}
+    

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f8f9fa;
+  --color-gold-200: #f3ebcf;
+  --color-gold-300: #e5c460;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #b9932b;
+  --color-gold-600: #9e7a20;
+  --color-gold-700: #7b5d14;
+  --color-gold-800: #624b0f;
+  --color-gold-950: #352705;
+  
+  --color-luxury-black: #030508;
+  --color-luxury-navy: #070a14;
+  --color-luxury-indigo: #0a0d17;
+  --color-luxury-bordeaux: #1e0911;
+  --color-luxury-purple: #130a1c;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-luxury-black);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-gold-500) var(--color-luxury-black);
+  }
+}
+
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030305;
+}
+::-webkit-scrollbar-thumb {
+  background: #bc7f2b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #deb766;
+}
+
+/* Premium noise overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(10, 10, 22, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 159, 86, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(10, 10, 22, 0.7);
+  border-color: rgba(197, 159, 86, 0.25);
+  box-shadow: 0 10px 40px -15px rgba(181, 132, 59, 0.15);
+}
+
+/* Gold typography details */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f4ebd6 0%, #deb766 50%, #b5843b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  text-shadow: 0 0 12px rgba(213, 185, 124, 0.35);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(213, 185, 124, 0.1);
+}
+
+/* Hide navigation bar under absolute fullscreen scroll pages */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Meteor transitions */
+@keyframes meteor-animation {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+.animate-meteor {
+  animation: meteor-animation 6s linear infinite;
+}
+
+/* Slow rotate for background glow elements */
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 120s linear infinite;
+}
+
+/* Pulsing soft gold dot */
+@keyframes gold-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+    filter: drop-shadow(0 0 2px rgba(213, 185, 124, 0.5));
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(213, 185, 124, 0.9));
+  }
+}
+
+.animate-gold-pulse {
+  animation: gold-pulse 4s ease-in-out infinite;
+}
+
+/* Shimmer lines */
+.shimmer-line {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(213, 185, 124, 0.15) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

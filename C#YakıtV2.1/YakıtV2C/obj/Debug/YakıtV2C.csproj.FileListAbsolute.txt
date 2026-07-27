@@ -1,0 +1,16 @@
+C:\C#lessons\YakıtV2C\YakıtV2C\bin\Debug\YakıtV2C.exe.config
+C:\C#lessons\YakıtV2C\YakıtV2C\bin\Debug\YakıtV2C.exe
+C:\C#lessons\YakıtV2C\YakıtV2C\bin\Debug\YakıtV2C.pdb
+C:\C#lessons\YakıtV2C\YakıtV2C\bin\Debug\MetroFramework.Design.dll
+C:\C#lessons\YakıtV2C\YakıtV2C\bin\Debug\MetroFramework.dll
+C:\C#lessons\YakıtV2C\YakıtV2C\bin\Debug\MetroFramework.Fonts.dll
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.csproj.AssemblyReference.cache
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.csproj.SuggestedBindingRedirects.cache
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.Form1.resources
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.Properties.Resources.resources
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.csproj.GenerateResource.cache
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.csproj.CoreCompileInputs.cache
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.csproj.CopyComplete
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.exe
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.pdb
+C:\C#lessons\YakıtV2C\YakıtV2C\obj\Debug\YakıtV2C.Form2.resources

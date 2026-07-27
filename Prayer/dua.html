@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gönül Çalab'ın tahtı - Dualar ve Sureler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous">
+    <style>
+        /* Daha iyi okunabilirlik ve görünüm için stiller */
+        body {
+            padding-top: 56px; /* Navbar yüksekliği kadar boşluk */
+        }
+        .content-section {
+            padding: 60px 15px; /* Bölümler arası boşluk (artırıldı) */
+            border-bottom: 1px solid #eee; /* Bölümler arasına çizgi */
+            /* min-height: 80vh; /* Bölümün ekranı doldurması için (kaldırıldı, içerik belirlesin) */
+        }
+        .content-section:last-child {
+            border-bottom: none; /* Son bölümün altındaki çizgiyi kaldır */
+        }
+        /* Kaynaktaki fonta benzer bir görünüm için */
+        @font-face{font-family:KuranFont;src:url('https://www.namazzamani.net/assets/font/ShaikhHamdullahMushaf.ttf')}
+
+        .arabic-text {
+            font-size: 2rem; /* Boyut biraz artırıldı */
+            direction: rtl;
+            font-family: KuranFont, 'Traditional Arabic', 'Times New Roman', serif; /* Kaynaktaki font eklendi */
+            line-height: 3.5rem; /* Satır aralığı artırıldı */
+            margin-bottom: 1.5rem;
+            text-align: center; /* Ayetleri ortala */
+            padding: 15px;
+             background-color: #f8f9fa; /* Hafif arkaplan rengi */
+             border-radius: 5px;
+        }
+         .arabic-text .besmele {
+            font-size: 2.2rem; /* Besmele biraz daha büyük */
+            display: block; /* Ayrı satırda */
+            margin-bottom: 1rem;
+        }
+        .transliteration-text p, .translation-text p, .info-text p {
+            font-size: 1.1rem;
+            line-height: 1.8rem; /* Okunabilirlik için satır aralığı */
+            margin-bottom: 1rem; /* Paragraflar arası boşluk */
+            text-align: justify; /* Metni iki yana yasla */
+        }
+         h2, h3 {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #0d6efd; /* Mavi renk */
+             font-weight: 700; /* Başlıklar daha belirgin */
+         }
+         h2 {
+             border-bottom: 2px solid #0d6efd;
+             padding-bottom: 10px;
+             display: inline-block; /* Çizginin sadece yazı kadar olmasını sağlar */
+         }
+         h3 {
+             color: #1a5fb4; /* Biraz daha koyu mavi */
+         }
+         /* Navbar'ı üste sabitlemek için */
+         .navbar {
+             position: fixed;
+             top: 0;
+             width: 100%;
+             z-index: 1030; /* Diğer elementlerin üzerinde kalması için */
+             box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Hafif gölge */
+         }
+         html {
+            scroll-behavior: smooth; /* Kaydırmayı yumuşat */
+            scroll-padding-top: 70px; /* Sabit navbar nedeniyle atlamaların düzgün olması için */
+         }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVİGASYON MENÜSÜ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#anasayfa">Gönül çalabın tahtı!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sureler
+                        </a>
+
+                
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#fatiha">Fatiha Suresi</a></li>
+                            <li><a class="dropdown-item" href="#ayetel-kursi">Ayetel Kürsi</a></li>
+                            <li><a class="dropdown-item" href="#yasin-bilgi">Yasin Hakkında Bilgi</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#ihlas">İhlas Suresi</a></li>
+                            <li><a class="dropdown-item" href="#felak">Felak Suresi</a></li>
+                            <li><a class="dropdown-item" href="#nas">Nas Suresi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dualar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#rabbi-yessir">Rabbi Yesir Duası</a></li>
+                            <li><a class="dropdown-item" href="#subhaneke">Sübhaneke Duası</a></li>
+                            <li><a class="dropdown-item" href="#tahiyyat">Tahiyyat Duası</a></li>
+                            <li><a class="dropdown-item" href="#salavat">Salavat Duaları</a></li>
+                            <li><a class="dropdown-item" href="#rabbena">Rabbena Duaları</a></li>
+                            <li><a class="dropdown-item" href="#nazar-duasi">Nazar Duası (Kalem 51-52)</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#yasin-dua">Yasin Sonrası Dua</a></li>
+                             
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Bitiş -->
+
+ 
+
+    <div id="greetingText" class="text-center text-bg-info mb-4 mt-2"></div>
+    <!-- isim alma bitiş -->
+    
+    <!-- İÇERİK ALANI BAŞLANGICI -->
+    <div class="container">
+
+        <!-- Anasayfa Bölümü -->
+        <div id="anasayfa" class="content-section text-center">
+            <h2>Hoş Geldiniz!</h2>
+            <p class="lead">Bu sayfada sık okunan bazı sure ve duaları bulabilirsiniz.</p>
+            <p><em>"Gönül Çalab'ın tahtı, Çalap gönüle baktı."</em></p>
+            <p>Yukarıdaki menüden istediğiniz sure veya duaya hızlıca ulaşabilirsiniz.</p>
+        </div>
+
+ <form>
+        <div class="form-group mt-3">
+            <label  class="ms-2" for="nameInput">İsim:</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="İsminizi girin">
+        </div>
+        <button type="button" class="btn btn-primary ms-auto mt-4" onclick="greet()">Gönder</button>
+    </form>
+        
+        <!-- Ayetel Kürsi Bölümü  -->
+        <div id="ayetel-kursi" class="content-section">
+            <div class="text-center"><h2>Ayet-el Kürsi (Bakara 255)</h2></div>
+             <h3>Arapça Okunuşu</h3>
+            <div class="arabic-text">
+                 <span class="besmele">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّح۪يمِ</span>
+                اَللّٰهُ لَٓا اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّومُۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌؕ لَهُ مَا فِي السَّمٰوَاتِ وَمَا فِي الْاَرْضِؕ مَنْ ذَا الَّذٖي يَشْفَعُ عِنْدَهُٓ اِلَّا بِاِذْنِهٖؕ يَعْلَمُ مَا بَيْنَ اَيْدٖيهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحٖيطُونَ بِشَيْءٍ مِنْ عِلْمِهٖٓ اِلَّا بِمَا شَٓاءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوَاتِ وَالْاَرْضَۚ وَلَا يَؤُ۫دُهُ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظٖيمُ ﴿٢٥٥﴾
+            </div>
+             <h3>Türkçe Okunuşu</h3>
+             <div class="transliteration-text">
+                 <p>Allâhu lâ ilâhe illâ huve’l-hayyu’l-kayyûm. Lâ te’huzuhû sinetun ve lâ nevm. Lehû mâ fi’s-semâvâti ve mâ fi’l-ardı men zellezî yeşfe’u ‘ındehû illâ bi iznih. Ya’lemu mâ beyne eydîhim ve mâ halfehum ve lâ yuhîtûne bi şey’in min ‘ılmihî illâ bimâ şâe vesi’a kursiyyuhu’s-semâvâti ve’larda ve lâ yeûduhû hıfzuhumâ ve huve’l-‘aliyyu’l-‘azîm.</p>
+             </div>
+            <h3>Anlamı (Meal)</h3>
+            <div class="translation-text">
+                <p>O’ndan başka ilah olmayan Allah, hay ve kayyumdur (ezel ve ebedidir). O’nu uyuklama ve uyku tutmaz. Göklerde ve yerlerde olan şeyler O’nundur. İzni olmaksızın O’nun yanında şefaat eden yoktur. Halkın önünde ve arkasında olanı (istikbal ve maziyi) bilir. İnsanlar O’nun ilminden, O’nun isteğinden başkasını ihata edemezler. Kürsisi semaları ve yeri içine alır. Onların hıfzı O’nu (Cenab-ı Ecelli Ala’yı) yormaz. O, pek yüksek ve büyüktür.</p>
+            </div>
+        </div>
+
+        <!-- Fatiha Suresi Bölümü (Kaynak Koddan Alındı) -->
+        <div id="fatiha" class="content-section">
+            <div class="text-center"><h2>Fatiha Suresi</h2></div>
+            <h3>Arapça Okunuşu</h3>
+            <div class="arabic-text">
+                <span class="besmele">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّح۪يمِ</span>
+                اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَم۪ينَۙ ﴿٢﴾ اَلرَّحْمٰنِ الرَّح۪يمِۙ ﴿٣﴾ مَالِكِ يَوْمِ الدّ۪ينِۜ ﴿٤﴾ اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَع۪ينُۜ ﴿٥﴾ اِهْدِنَا الصِّرَاطَ الْمُسْتَق۪يمَۙ ﴿٦﴾ صِرَاطَ الَّذ۪ينَ اَنْعَمْتَ عَلَيْهِمْۙ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّٓالّ۪ينَ ﴿٧﴾
+            </div>
+            <h3>Türkçe Okunuşu</h3>
+            <div class="transliteration-text">
+                <p>Bismillâhi’r-Rahmâni’r-Rahîm.</p>
+                <p>1. Elhamdulillâhi Rabbi’l-âlemîn.</p>
+                <p>2. Er-Rahmâni’r-Rahîm.</p>
+                <p>3. Mâliki yevmi’d-dîn.</p>
+                <p>4. İyyâke na’budu ve iyyâke neste’în.</p>
+                <p>5. İhdine’s-sırâta’l-mustakîm.</p>
+                <p>6. Sırâta’l-lezîne en’amte aleyhim.</p>
+                <p>7. Ğayri’l-meğdûbi aleyhim ve le’d-dâllîn.</p>
+            </div>
+            <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                <p>Rahmân ve Rahîm olan Allah’ın adıyla.</p>
+                <p>1. Hamd; Âlemlerin Rabbi olan Allah’a aittir.</p>
+                <p>2. (O Allah) Rahmân ve Rahîm’dir.</p>
+                <p>3. Din (ödül ve ceza) gününün sahibidir.</p>
+                <p>4. (Ey Allah’ım) Biz yalnızca Sana ibadet eder ve yalnızca Sen’den yardım dileriz.</p>
+                <p>5. Bizi dosdoğru yola ilet.</p>
+                <p>6. Kendilerine nimet verdiğin kimselerin yoluna ilet,</p>
+                <p>7. gazaba uğrayanların ve sapıkların yoluna değil.</p>
+            </div>
+        </div>
+
+
+        <!-- İhlas Suresi Bölümü (Kaynak Koddan Alındı) -->
+        <div id="ihlas" class="content-section">
+            <div class="text-center"><h2>İhlas Suresi</h2></div>
+            <h3>Arapça Okunuşu</h3>
+            <div class="arabic-text">
+                <span class="besmele">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّح۪يمِ</span>
+                قُلْ هُوَ اللّٰهُ اَحَدٌۚ ﴿١﴾ اَللّٰهُ الصَّمَدُۚ ﴿٢﴾ لَمْ يَلِدْ وَلَمْ يُولَدْۙ ﴿٣﴾ وَلَمْ يَكُنْ لَهُ كُفُواً اَحَدٌ ﴿٤﴾
+            </div>
+            <h3>Türkçe Okunuşu</h3>
+            <div class="transliteration-text">
+                <p>Bismillâhi’r-Rahmâni’r-Rahîm.</p>
+                <p>1. Gul huvallâhu ehad.</p>
+                <p>2. Allâhu’s-samed.</p>
+                <p>3. Lem yelid ve lem yûled.</p>
+                <p>4. Ve lem yekun lehû kufuven ahad.</p>
+            </div>
+            <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                <p>Rahmân ve Rahîm olan Allah’ın adıyla.</p>
+                <p>1. De ki: O Allah birdir.</p>
+                <p>2. Allah samed (her şey O’na muhtaç, O kimseye muhtaç değil)’dir.</p>
+                <p>3. O doğurmamıştır ve doğurulmamıştır.</p>
+                <p>4. Ve hiçbir şey O’nun dengi değildir.</p>
+            </div>
+        </div>
+
+        <!-- Felak Suresi Bölümü (Kaynak Koddan Alındı) -->
+        <div id="felak" class="content-section">
+            <div class="text-center"><h2>Felak Suresi</h2></div>
+             <h3>Arapça Okunuşu</h3>
+            <div class="arabic-text">
+                <span class="besmele">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّح۪يمِ</span>
+                قُلْ اَعُوذُ بِرَبِّ الْفَلَقِۙ ﴿١﴾ مِنْ شَرِّ مَا خَلَقَۙ ﴿٢﴾ وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ ﴿٣﴾ وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِۙ ﴿٤﴾ وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ ﴿٥﴾
+            </div>
+            <h3>Türkçe Okunuşu</h3>
+            <div class="transliteration-text">
+                <p>Bismillâhi’r-Rahmâni’r-Rahîm.</p>
+                <p>1. Gul e’ûzu bi-Rabbi’l-felak.</p>
+                <p>2. Min şerri mâ halak.</p>
+                <p>3. Ve min şerri ğâsikın izâ vekab.</p>
+                <p>4. Ve min şerri’n-neffâsâti fi’l-ukad.</p>
+                <p>5. Ve min şerri hâsidin izâ hased.</p>
+            </div>
+            <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                <p>Rahmân ve Rahîm olan Allah’ın adıyla.</p>
+                <p>1. De ki: ben, karanlığı yarıp sabahı ortaya çıkaran Rabbe sığınırım,</p>
+                <p>2. Yarattığı şeylerin şerrinden,</p>
+                <p>3. Karanlığı çöktüğü zaman gecenin şerrinden,</p>
+                <p>4. Düğümlere üfleyenlerin şerrinden,</p>
+                <p>5. Ve hased ettiği zaman hasedçinin şerrinden. (Allah’a sığınırım).</p>
+            </div>
+        </div>
+
+ <!-- Rabbi Yessir Duası Bölümü (YENİ EKLENDİ) -->
+        <div id="rabbi-yessir" class="content-section">
+            <div class="text-center"><h2>Rabbi Yessir Duası</h2></div>
+            <h3>Türkçe Okunuşu</h3>
+            <div class="transliteration-text">
+                <p>Bismillahirrahmanirrahim</p>
+                <p>Rabbi yessir ve la tuassir.</p>
+                <p>Sehhil aleyna bi fadlike ya müyessir.</p>
+                <p>Rabbi zidne ilmen ve fehmen nafian.</p>
+                <p>Ve temmim bil hayri.</p>
+             </div>
+            <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                <p>Allah'ım senin sonsuz merhametin ve yardımın olmadan ben bu işi yapamam. Allah'ım bütün hayırlı işlerimi zorlaştırma, kolaylaştır, ilmimi artırarak yaptığım işleri bana ve çevreme faydalı kıl, ve işlerimi en hayırlı şekilde sonuçlandır.</p>
+            </div>
+        </div>
+        
+        <!-- Nas Suresi Bölümü (Kaynak Koddan Alındı) -->
+        <div id="nas" class="content-section">
+            <div class="text-center"><h2>Nas Suresi</h2></div>
+            <h3>Arapça Okunuşu</h3>
+            <div class="arabic-text">
+                 <span class="besmele">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّح۪يمِ</span>
+                 قُلْ اَعُوذُ بِرَبِّ النَّاسِۙ ﴿١﴾ مَلِكِ النَّاسِۙ ﴿٢﴾ اِلٰهِ النَّاسِۙ ﴿٣﴾ مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِۙ ﴿٤﴾ اَلَّذ۪ي يُوَسْوِسُ ف۪ي صُدُورِ النَّاسِۙ ﴿٥﴾ مِنَ الْجِنَّةِ وَالنَّاسِ ﴿٦﴾
+            </div>
+            <h3>Türkçe Okunuşu</h3>
+            <div class="transliteration-text">
+                <p>Bismillâhi’r-Rahmâni’r-Rahîm.</p>
+                <p>1. Gul e’ûzu bi-Rabbi’n-nâs.</p>
+                <p>2. Meliki’n-nâs.</p>
+                <p>3. İlâhi’n-nâs.</p>
+                <p>4. Min şerri’l-vesvâsi’l-hânnâs.</p>
+                <p>5. Ellezî yuvesvisu fî sudûri’n-nâs.</p>
+                <p>6. Mine’l-cinneti ve’n-nâs.</p>
+            </div>
+            <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                <p>Rahmân ve Rahîm olan Allah’ın adıyla.</p>
+                <p>1. De ki: İnsanların Rabbine sığınırım.</p>
+                <p>2. İnsanların malikine,</p>
+                <p>3. İnsanların (gerçek) ilahına;</p>
+                <p>4. İnsanlara kötü şeyler fısıldayan o sinsi vesvesecinin şerrinden.</p>
+                <p>5. O ki, insanların göğüslerine (kötü düşünce, şüphe) vesvese verir.</p>
+                <p>6. Gerek cin, gerekse insanlardan (olan vesvesecilerin şerrinden Allah’a sığınırım).</p>
+            </div>
+        </div>
+
+        <!-- Sübhaneke Duası Bölümü (Kaynak Koddan Alındı) -->
+        <div id="subhaneke" class="content-section">
+             <div class="text-center"><h2>Sübhaneke Duası</h2></div>
+             <h3>Arapça Okunuşu</h3>
+             <div class="arabic-text">
+                سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ ﴿﴾ وَتَبَارَكَ اسْمُكَ ﴿﴾  وَتَعَالَى جَدُّكَ ﴿﴾  وَلاَ إِلَهَ غَيْرُكَ
+             </div>
+             <h3>Türkçe Okunuşu</h3>
+             <div class="transliteration-text">
+                 <p>Subhânekellâhumme ve bi hamdik ve tebârakesmuk ve teâlâ cedduk (ve celle senâuk*) ve lâ ilâhe ğayruk.</p>
+                 <p><small>* (vecelle senâuk kısmı sadece cenaze namazında okunur.)</small></p>
+             </div>
+             <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                 <p>Allah'ım! Sen eksik sıfatlardan pak ve uzaksın. Seni daima böyle tenzih eder ve överim. Senin adın mübarektir. Varlığın her şeyden üstündür. Senden başka ilah yoktur.</p>
+             </div>
+        </div>
+
+        <!-- Tahiyyat Duası Bölümü (Kaynak Koddan Alındı) -->
+        <div id="tahiyyat" class="content-section">
+             <div class="text-center"><h2>Tahiyyat (Ettehiyyatü) Duası</h2></div>
+             <h3>Arapça Okunuşu</h3>
+             <div class="arabic-text">
+                 التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ ﴿﴾السَّلامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ ﴿﴾ السَّلامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ ﴿﴾ أَشْهَدُ أَنْ لا إِلَهَ إِلا اللَّهُ ﴿﴾ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+             </div>
+             <h3>Türkçe Okunuşu</h3>
+             <div class="transliteration-text">
+                 <p>Ettehiyyâtu lillâhi vessalevâtu vettayibât. Esselâmu aleyke eyyuhen-Nebiyyu ve rahmetullahi ve berakâtuhu. Esselâmu aleynâ ve alâ ibâdillâhis-Sâlihîn. Eşhedu en lâ ilâhe illallâh ve eşhedu enne Muhammeden abduhû ve Rasuluh.</p>
+             </div>
+             <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                 <p>Dil ile, beden ve mal ile yapılan bütün ibadetler Allah’adır. Ey Peygamber! Allah’ın selamı, rahmet ve bereketleri senin üzerine olsun. Selam bizim üzerimize ve Allah’ın bütün iyi kulları üzerine olsun. Şahitlik ederim ki, Allah’tan başka ilah yoktur. Yine şahitlik ederim ki, Muhammed, O’nun kulu ve elçisidir.</p>
+             </div>
+        </div>
+
+        <!-- Salavat Duaları Bölümü (Kaynak Koddan Alındı) -->
+        <div id="salavat" class="content-section">
+             <div class="text-center"><h2>Salavat (Salli ve Barik) Duaları</h2></div>
+             <h3>Allahümme Salli Duası</h3>
+             <h4>Arapça Okunuşu</h4>
+             <div class="arabic-text">
+                اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ ﴿﴾ كَمَا صَلَّيْتَ عَلَى إِبْرَاه۪يمَ وَعَلَى آلِ إِبْرَاه۪يمَ ﴿﴾ إِنَّكَ حَم۪يدٌ مَج۪يدٌ
+             </div>
+              <h4>Türkçe Okunuşu</h4>
+             <div class="transliteration-text">
+                 <p>Allâhumme salli alâ Muhammedin ve alâ âli Muhammed. Kemâ salleyte alâ İbrahime ve alâ âli İbrahim. İnneke hamidun mecîd.</p>
+             </div>
+             <h4>Anlamı (Meal)</h4>
+             <div class="translation-text">
+                 <p>Allah’ım! Muhammed’e ve Muhammed’in ümmetine rahmet eyle; şerefini yücelt. İbrahim’e ve İbrahim’in ümmetine rahmet ettiğin gibi. Şüphesiz övülmeye layık yalnız sensin, şan ve şeref sahibi de sensin.</p>
+             </div>
+
+             <hr>
+
+             <h3>Allahümme Barik Duası</h3>
+              <h4>Arapça Okunuşu</h4>
+             <div class="arabic-text">
+                 اللَّهُمَّ بَارِكَ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ ﴿﴾ كَمَا بَارَكْتَ عَلَى إِبْرَاه۪يمَ وَعَلَى آلِ إِبْرَاه۪يمَ ﴿﴾ إِنَّكَ حَم۪يدٌ مَج۪يدٌ
+             </div>
+              <h4>Türkçe Okunuşu</h4>
+             <div class="transliteration-text">
+                 <p>Allâhumme barik alâ Muhammedin ve alâ âli Muhammed. Kemâ barekte alâ İbrahîme ve alâ âli İbrahim. İnneke hamidun mecîd.</p>
+             </div>
+             <h4>Anlamı (Meal)</h4>
+             <div class="translation-text">
+                 <p>Allah’ım! Muhammed’e ve Muhammed’in ümmetine hayır ve bereket ver. İbrahim’e ve İbrahim’in ümmetine verdiğin gibi. Şüphesiz övülmeye layık yalnız sensin, şan ve şeref sahibi de sensin.</p>
+             </div>
+        </div>
+
+        <!-- Rabbena Duaları Bölümü (Kaynak Koddan Alındı) -->
+        <div id="rabbena" class="content-section">
+             <div class="text-center"><h2>Rabbena Duaları</h2></div>
+             <h3>Rabbena Atina Duası</h3>
+              <h4>Arapça Okunuşu</h4>
+             <div class="arabic-text">
+                 رَبَّنَٓا اٰتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْاٰخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ
+             </div>
+             <h4>Türkçe Okunuşu</h4>
+             <div class="transliteration-text">
+                 <p>Rabbenâ âtina fid'dünyâ haseneten ve fil'âhirati haseneten ve gınâ azâbennâr.</p>
+             </div>
+             <h4>Anlamı (Meal)</h4>
+             <div class="translation-text">
+                 <p>Allah'ım! Bize dünyada iyilik ve güzellik, ahirette de iyilik, güzellik ver. Bizi ateş azabından koru.</p>
+             </div>
+
+             <hr>
+
+             <h3>Rabbenağfirli Duası</h3>
+              <h4>Arapça Okunuşu</h4>
+             <div class="arabic-text">
+                رَبَّنَا اغْفِرْ ل۪ي وَلِوَالِدَيَّ وَلِلْمُؤْمِن۪ينَ يَوْمَ يَقُومُ الْحِسَابُ
+             </div>
+             <h4>Türkçe Okunuşu</h4>
+             <div class="transliteration-text">
+                 <p>Rabbenâğfirlî ve li-vâlideyye ve lil-Mu'minine yevme yekûmu'l hisâb.</p>
+             </div>
+             <h4>Anlamı (Meal)</h4>
+             <div class="translation-text">
+                 <p>Ey bizim Rabbimiz! Beni, anamı ve babamı ve bütün mü'minleri hesap gününde (herkesin sorguya çekileceği günde) bağışla.</p>
+             </div>
+        </div>
+
+        <!-- Nazar Duası Bölümü (Kalem 51-52) (Önceki koddan korundu) -->
+        <div id="nazar-duasi" class="content-section">
+             <div class="text-center"><h2>Nazar Duası (Kalem Suresi 51-52)</h2></div>
+             <div class="info-text text-center">
+                 <p>Nazar için genellikle Ayetel Kürsi, İhlas, Felak ve Nas Sureleri okunur. Ayrıca Kalem Suresi'nin son iki ayetinin de okunması tavsiye edilir:</p>
+             </div>
+             <h3>Arapça Okunuşu</h3>
+             <div class="arabic-text">
+                 وَإِن يَكَادُ الَّذِينَ كَفَرُوا لَيُزْلِقُونَكَ بِأَبْصَارِهِمْ لَمَّا سَمِعُوا الذِّكْرَ وَيَقُولُونَ إِنَّهُ لَمَجْنُونٌ ﴿٥١﴾ وَمَا هُوَ إِلَّا ذِكْرٌ لِّلْعَالَمِينَ ﴿٥٢﴾
+             </div>
+             <h3>Türkçe Okunuşu</h3>
+             <div class="transliteration-text">
+                 <p>51. Ve in yekâdullezîne keferû le yuzlikûneke bi ebsârihim lemmâ semiûz zikra ve yekûlûne innehu le mecnûn(mecnûnun).</p>
+                 <p>52. Ve mâ huve illâ zikrun lil âlemîn(âlemîne).</p>
+             </div>
+             <h3>Anlamı (Meal)</h3>
+             <div class="translation-text">
+                 <p>51. O inkâr edenler Zikr’i (Kur’an’ı) işittikleri zaman, neredeyse seni gözleriyle devireceklerdi. Hâlâ da (kin ve hasetlerinden:) “Hiç şüphe yok o bir delidir” derler.</p>
+                 <p>52. Hâlbuki o (Kur’an), âlemler için ancak bir öğüttür.</p>
+             </div>
+        </div>
+
+ <!-- Yasin Hakkında Bilgi ve Dua Bölümü (Önceki koddan korundu) -->
+        <div id="yasin-bilgi" class="content-section">
+             <div class="text-center"><h2>Yâsîn Suresi Hakkında Bilgi ve Dualar</h2></div>
+             <div class="info-text">
+                 <p class="mt-2"><strong>Yasin Duası</strong>: Yasin Suresi okunduktan sonra bağışlamak için okunan duadır. Yasin
+                     Suresi <b>Bağışlama duası</b> olarak da bilinir. Yasin Duasını Arapça, Latin harfleriyle Türkçe yüzünden
+                     veya Türkçe Meali ile okuyabilirsiniz. Allah, okuduğunuz Yasinleri ve tüm ibadetlerinizi kabul etsin.</p>
+             </div>
+
+             <!-- Yasin Sonrası Dua Bölümü (Kısa ve Uzun) -->
+             <div id="yasin-dua">
+                 <h3>Yasin Suresi Duası (Kısa)</h3>
+                 <h4>Arapça</h4>
+                 <div class="text-center">
+                     <img loading='lazy' alt="Yasin Suresi Duası Arapça" border="0" data-original-height="2000"
+                          data-original-width="1528" class="img-fluid" style="max-width: 382px; height: auto;"
+                          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY6N9GFW7vlz_FSoneri2iplXbrqR8Z8jnMIO2j_b-Y1pxpEIFcB2fODS1z21mqJBCGbEqtc5Ex-VmgJpR4VuIXq3ZreEGQiZ6-j9qCEOLRFfh5VJmI2netU6s8VY_muv3fnIkjONJH7LBdZAOqKGxe5YH3MHwVhJnne3l9-ZSZR7UEdvmN4WHo4WK9A/s1600/yasin-suresi-duasi.jpg" />
+                 </div>
+                 <h4>Türkçe Okunuşu</h4>
+                 <div class="transliteration-text">
+                     <p>Bismillahirrahmanirrahim</p>
+                     <p>Allahümme rabbena ya rabbena tekabbel minna duaena vekdi hacetena bihurmeti sureti yasin ve ecirna minennari
+                             vemin azabil kabri ve min şerri sualin bi fadli sureti yasin yarabbel alemiyne veselemun alel mürseliyne
+                             velhamdülillahi rabbil alemin.</p>
+                 </div>
+                 <h4>Anlamı (Meal)</h4>
+                 <div class="translation-text">
+                     <p>Esirgeyen ve Bağışlayan Allah’ın Adıyla</p>
+                     <p>Yasin suresinin hurmetine dualarımızı kabul ve ihtiyaçlarımızı eda buyur. Ey Rabbil Alemin! Yasin suresinin
+                             faziletine bizi ateşten, kabir azabından ve sualin şerrinden koru. Ve peygamberlere selam olsun. Hamd
+                             Alemlerin Rabbi Allah'a mahsustur.</p>
+                 </div>
+                 <p class="text-center">EL FATİHA</p>
+
+                 <hr>
+
+                 <h3>Yasin Suresi Uzun Bağışlama Duası</h3>
+                 <div class="transliteration-text">
+                     <p>Euzübillahimineşşeytanirracim<br>Bismillahirrahmanirrahim<br>Elhamdülillahi rabbil alemin vel akıbetül müttekin, vesselatü vessalamü ala resulüne Muhammedin ve ala alihi ve sahbihi ecmain <br>Ya Rabbel alemin Ya Erhamerrahimin la ilahe illAllah kalbimi karartma La ilahe illAllah rızkımı azaltma <br>Kendi kapından başka kapı aratma Dünyada ve Ahirette bunaltma <br>Tükenmez sabır azapsız kabir cümlemize nasip eyle.<br> <br>Yarabbim Ey bizi yoktan var eden varlığından haberdar eden Allahımız, <br>okunmuş olan Kur-Anı Kerimi Yasin-i Şerifi Evradiyeyi Tebareke ve Amme süresini kabul makbul eyle.<br><br>Peygamberimiz Aleyhisselam Efendimiz hazretlerinin mübarek latif ruhuna hediye eyledik Ahirette şefaatini Cennette komşuluğunu cümlemize nasip eyle Bütün peygamberlerin ruhuna hediye ettik hepsini haberdar eyle Yarabbi Cümlemizin ecdadımızdan ahirete intikal edenlerin ruhuna hediye ettik Vasıl eyle <br><br>Yarabbi ruhlarını şad mestur taksiratlarını af ve mafiret eyle kabirlerini Pirnur makamlarını Cennet eyle. <br>Yarabbi Vücudumuzu kaim nimetlerimizi daim sıhhatımızı müdavim evlatlarımızı alim eyle Yarabbi Ağzımıza tat vücudumuza sıhhat evlatlarımıza itaat lütf eyle Yarabbi Fakirlik gelmeden evvel nimetin meşguliyet gelmeden evvel boş vaktin, ihtiyarlık gelmeden evvel gençliğin, hastalık gelmeden evvel sıhhatin, ölüm gelmeden evvel hayatın kıymetini bilmeyi bizlere lütf eyle Yarabbi Amentüye tam inanan kalbi aşkın ile yanan seherlerde erken kalkan fevzü ilahine konan kullarından eyle. <br><br>Yarabbi Zalim nefse dirgen vuran bir ömürlük dosyasını güzel amellerle dolduran kullarından eyle Yarabbi Kabetullaha hazır olan kullarından eyle Yarabbi Her yerde haddini bilen gönül aynasını silen, mahşerde el ağlarken beraat edip yüzü gülen kullarından eyle Yarabbi Lüftu İlahine eren iman ile can veren firdevs cennetine giren orada cemalini gören kullarından eyle Yarabbi Dertli kullarına deva borçlu kullarına eda, hastalara şifalar nasip eyle Yarabbi Senin indinde kabul kullarının hürmetine bizim de şu anda yaptığımız duayı kabul ve makbul eyle. <br><br>Burada bulunan Kur-an okuyan dinleyenlerinde bütün ölmüşlerinin ruhuna hediye ettik kabul eyle Yarabbi Özellikle ev sahibinin annesinin, babasının ve bütün akrabalarının ruhuna hediye ettik kabul eyle. <br><br>Yarabbi Allahım bizi af eyle her derdimizi def eyle rızkımızı bol eyle, kabrimizi nur eyle Yarabbi Evvelim Allah ahirim Allah kalbimde Beytullah LailaheillAllah Muhammedün Resulullah Eşhedü ve Resülühü diyerek çene kapatmak nasip eyle Yarabbi Allahım şeytanın şerrinden kabirdeki yılanlardan çıyanlardan ölümün dehşetinden kabirin vahşetinden sıratın zulmetinden muhafaza eyle Ölümün hayırlısı üç ayların birisi Yasinin yarısını okurken ölmek nasip eyle. <br><br>Yarabbi Yarabbi tekrar Yarabbi Vağfirlena Zunübenna altı nesne ver bana biri iman, biri Kur-an, biri rahmet biri cennet, biri nasip, biri kısmet Bu altı nesneyi müşşeref eyle Yarabbi Yarabbi dualarımızı Beytullahta yapılan dualara ilhak ile kabul eyle Hz Muhammed Peygamberimizin mübarek hürmetine erenler evliyalar şehitler hürmetine sana yalvaran yaralı gönüller hürmetine arşı alanın altına yazılan isimler hürmetine kürsünün üzerine yazılan isimler hürmetine kabul eyle Yarabbi Amin <br><br>Sübhane Rabbike Rabbil İzzeti Amme Yesüfun Ve Selamün Alel Mürselin Velhamdülillahi Rabbil Alemin El Fatiha Meas Selavat.</p>
+                 </div>
+            </div>
+
+             <hr>
+
+             <h3>Yâsîn Suresi Hakkında Genel Bilgi</h3>
+              <div class="info-text">
+                 <p>Adı iki harften oluşan ilk âyetinden alınmıştır. Hz. Peygamber tarafından bu isimle anılmıştır ve Buhârî ve
+                         Tirmizî'nin hadis kitaplarında da bu isim kullanılmıştır. Sûre, Kur'an'ın kalbi olarak nitelendirilen
+                         bir hadise dayanarak "kalbü'l-Kur'ân" olarak da adlandırılmıştır ancak bu yaygınlık kazanamamıştır.
+                         Sûrenin Mekke döneminin ortalarında nâzil olduğu kabul edilmektedir. İnsanların yaptıkları işlerin ve
+                         bıraktıkları izlerin kayda geçirildiğini bildiren 12. âyetin yorumu meyanında rivayet edilen bir hadis
+                         dolayısıyla bu âyetin Medine'de indiği söylenmiştir ancak bu kanaat benimsenmemiştir. Sûre seksen üç
+                         âyetten oluşmaktadır.<br><br />
+
+                         Yâsîn sûresinde İslâm akaidinin üç temel konusu (tevhid, nübüvvet ve âhiret) tabiatın mükemmel
+                         kuruluşundan ve işleyişinden delillerle anlatılır. Bu arada geçmiş kavimlerden ibret alınacak örnekler
+                         verilir.
+                         <br><br />
+
+                         Yâsîn sûresi, Hz. Peygamber'e İncil yerine verildiğine dair hadisin sahih olduğu kabul edilmiştir. Bu
+                         sûre hakkında birçok hadis rivayet edilmiştir. Bunlardan biri "Yâsîn sûresini geceleri okuyan kimsenin
+                         günahları bağışlanır" şeklindedir ve sahih sayılmıştır.
+                         <br><br /></p>
+             </div>
+        </div>
+
+        
+    </div> <!-- Ana container bitişi -->
+    <!-- İÇERİK ALANI BİTİŞİ -->
+
+    <!-- Footer (İsteğe bağlı) -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 - Tüm Hakları Saklıdır.
+      </div>
+    </footer>
+     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
